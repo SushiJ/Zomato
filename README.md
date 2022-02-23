@@ -13,4 +13,4 @@ Zomato full stack app.
 - JWT
 
 [Client](Client/README.md)<br/>
-[Server](server/README.md)
+[Server](server/Readme.md)
