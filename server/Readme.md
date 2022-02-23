@@ -17,6 +17,40 @@ you enter a password = 123456
 first step is Hashing; sdfasd324sdsdvask34h423*&^*743jdngjkk3457i
 second step is Salting(10); sdfasd324sdsdvask34h423*&^*743jdngjkk3457i$%^&\*(
 
-## Tasks
+## Database Model
 
-1. Create required validation for rest of the routes.
+### Restaurant 
+<pre>[
+  "name": "", 
+  "city": "",
+  "address": "",
+  "mapLocation": "",
+  "cuisine": ["", ""],
+  "restaurantTimings": "",
+  "contactNumber": "",
+  "website": "",
+  "popularDishes": ["", ""],
+  "averageCost": 300,
+  "amenties": ["", ""],
+  "menuImages": referencing => Images Collecion document,
+  "menu": references => Menu Collection document,
+  "reviews": ["references => Reviews Collection document", "references => Reviews Collection document"],
+  "photos": references => Images Collection document
+]</pre>
+
+### Menu
+<pre>
+menus: [
+  {
+    name: "",
+    items: [
+       references => Food Collection document,
+    ]
+  }
+],
+"recommended": [
+  "references => Food Collection document"
+]
+</pre>
+
+
